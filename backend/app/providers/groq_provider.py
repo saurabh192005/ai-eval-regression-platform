@@ -36,8 +36,8 @@ def generate(prompt: str, model: str, temperature: float = 0.0, timeout: float =
             return ProviderResult(None, latency, error="rate_limited")
         if r.status_code in (401, 403):
             return ProviderResult(None, latency, error="authentication_failed")
-            if r.status_code >= 400:
-                return ProviderResult(None, latency, error=f"http_{r.status_code}: {r.text[:200]}")
+        if r.status_code >= 400:
+            return ProviderResult(None, latency, error=f"http_{r.status_code}: {r.text[:200]}")
         data = r.json()
         usage = data.get("usage", {})
         return ProviderResult(
