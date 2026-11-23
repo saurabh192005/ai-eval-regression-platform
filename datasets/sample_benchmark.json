@@ -1,0 +1,32 @@
+{
+  "name": "basic-benchmark",
+  "description": "25 deterministic questions: math, facts, classification, strings",
+  "version": "v1",
+  "test_cases": [
+    {"input_text": "What is 17 + 26? Answer with just the number.", "expected_output": "43", "metadata": {"category": "math"}},
+    {"input_text": "What is 9 times 8? Answer with just the number.", "expected_output": "72", "metadata": {"category": "math"}},
+    {"input_text": "What is 144 divided by 12? Answer with just the number.", "expected_output": "12", "metadata": {"category": "math"}},
+    {"input_text": "What is 15% of 200? Answer with just the number.", "expected_output": "30", "metadata": {"category": "math"}},
+    {"input_text": "What is the square root of 81? Answer with just the number.", "expected_output": "9", "metadata": {"category": "math"}},
+    {"input_text": "What is 2 to the power of 10? Answer with just the number.", "expected_output": "1024", "metadata": {"category": "math"}},
+    {"input_text": "What is 100 minus 37? Answer with just the number.", "expected_output": "63", "metadata": {"category": "math"}},
+    {"input_text": "What is the next number in the sequence 2, 4, 8, 16? Answer with just the number.", "expected_output": "32", "metadata": {"category": "math"}},
+    {"input_text": "What is the capital of France? Answer with just the city name.", "expected_output": "Paris", "metadata": {"category": "facts"}},
+    {"input_text": "What is the capital of Japan? Answer with just the city name.", "expected_output": "Tokyo", "metadata": {"category": "facts"}},
+    {"input_text": "What is the chemical symbol for gold? Answer with just the symbol.", "expected_output": "Au", "metadata": {"category": "facts"}},
+    {"input_text": "Which planet is closest to the Sun? Answer with just the planet name.", "expected_output": "Mercury", "metadata": {"category": "facts"}},
+    {"input_text": "How many days are in a leap year? Answer with just the number.", "expected_output": "366", "metadata": {"category": "facts"}},
+    {"input_text": "Who wrote Romeo and Juliet? Answer with just the last name.", "expected_output": "Shakespeare", "metadata": {"category": "facts"}},
+    {"input_text": "What is the largest ocean on Earth? Answer with just the ocean name, one word.", "expected_output": "Pacific", "metadata": {"category": "facts"}},
+    {"input_text": "What is the chemical formula of water? Answer with just the formula.", "expected_output": "H2O", "metadata": {"category": "facts"}},
+    {"input_text": "How many continents are there? Answer with just the number.", "expected_output": "7", "metadata": {"category": "facts"}},
+    {"input_text": "What is the capital of Australia? Answer with just the city name.", "expected_output": "Canberra", "metadata": {"category": "facts"}},
+    {"input_text": "Is the sentiment of this sentence positive or negative? 'I love this phone, it works great!' Answer with one word.", "expected_output": "positive", "metadata": {"category": "classification"}},
+    {"input_text": "Is the sentiment of this sentence positive or negative? 'This was a terrible waste of money.' Answer with one word.", "expected_output": "negative", "metadata": {"category": "classification"}},
+    {"input_text": "Is 29 a prime number? Answer yes or no.", "expected_output": "yes", "metadata": {"category": "classification"}},
+    {"input_text": "Is 51 a prime number? Answer yes or no.", "expected_output": "no", "metadata": {"category": "classification"}},
+    {"input_text": "Is the word 'level' a palindrome? Answer yes or no.", "expected_output": "yes", "metadata": {"category": "classification"}},
+    {"input_text": "Reverse the word 'stone'. Answer with just the reversed word.", "expected_output": "enots", "metadata": {"category": "strings"}},
+    {"input_text": "How many letters are in the word 'banana'? Answer with just the number.", "expected_output": "6", "metadata": {"category": "strings"}}
+  ]
+}
